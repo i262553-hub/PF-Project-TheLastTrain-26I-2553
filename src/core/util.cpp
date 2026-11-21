@@ -4,6 +4,7 @@
 using namespace std;
 #include<cctype>
 #include<cstring>
+#include<cstdlib>
 
 // Function 1: Keep a number within limits
 int clampInt(int val, int minVal, int maxVal) {
@@ -83,9 +84,8 @@ cout << "========================================\n";
 }
 
 // Function 5: Clear terminal screen
-void clearScreen()
-{
-    cout << "\033[2J\033[H";
-    
-    cout.flush();
+void clearScreen() {
+
+    system("cls");
+
 }
